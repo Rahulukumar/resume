@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{%block content %}
+<div class=" mt-5">
+    <div class="text-center">
+        <img src="{%static 'core/images/rahul_image.jpg'%}" alt="profile"
+    class="img-thumbnail" width="250px" height="150px">
+        <hr style="height:2px;border-width:0;color:gray;background-color:white">
+    </div>
+
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello , </h1>
+        <div class="px-4" style="line-height:2em;">
+            <p style="text-indent:100px;"> I am <b class="text-warning">Rahul Kumar</b>
+                having 1.5+ year of experience as a <b class="text-warning"> Python Developer </b> <br>
+                * Having experience in developing web applications using <b class="text-warning">Python</b> and <b class="text-warning">Django</b>.<br>
+                * Knowledge on front end designing <b class="text-warning">HTML, CSS </b>.<br>
+                * Exceptional ability to work independently with a team of Python coders.<br>
+                * Ability to learn and adapt quickly and to correctly apply new tools and technologies.<br>
+                * Self-starter who can prioritize in order to meet deadlines.<br>
+                * Capable of working alone as well as a team player with strong interpersonal skills.<br>
+            <hr style="height:2px;border-width:0;color:gray;background-color:white">
+            </p>
+        </div>
+    </div>
+    <div class="text-center mt-5">
+        <a href="{% url 'contact'%}" class="btn btn-outline-warning my-3 mx-5">Hire me </a>
+        <a href="{% url 'contact'%}" class="btn btn-outline-warning my-3  ">Contact</a>
+    </div>
+
+</div>
+
+{% endblock content%}
